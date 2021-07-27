@@ -14,6 +14,9 @@ window.cookieconsent.initialise({
     'allow': '許可',
     'deny': '拒否'
   },
+  'cookie': {
+    'path': '/'
+  },
   onPopupOpen: function() {
     if (! this.hasConsented()) {
       const buttons = document.querySelectorAll('input[type="submit"]');
@@ -31,7 +34,7 @@ window.cookieconsent.initialise({
     }
 
     if (status === 'deny') {
-      document.cookie = 'cookieconsent_status=; expires=0';
+      document.cookie = 'cookieconsent_status=; expires=0; path=/';
       location.href = 'https://www.tokiomarine-nichido.co.jp/';
     }
   }
