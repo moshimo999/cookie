@@ -14,9 +14,6 @@ window.cookieconsent.initialise({
     'allow': '許可',
     'deny': '拒否'
   },
-  'cookie': {
-    'path': '/'
-  },
   onPopupOpen: function() {
     if (! this.hasConsented()) {
       const buttons = document.querySelectorAll('input[type="submit"]');
