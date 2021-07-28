@@ -8,7 +8,7 @@ window.cookieconsent.initialise({
     }
   },
   'autoOpen': true,
-  'type': 'opt-in',
+  'type': 'opt-out',
   'content': {
     'message': 'Cookieの使用について説明',
     'allow': '許可',
