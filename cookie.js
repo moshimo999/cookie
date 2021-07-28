@@ -7,13 +7,17 @@ window.cookieconsent.initialise({
       'background': '#f1d600'
     }
   },
-  'autoOpen': true,
+  'position': 'top',
+  'static': true,
   'type': 'opt-out',
   'content': {
-    'message': 'Cookieの使用について説明',
+    'message': 'This website uses cookies to ensure you get the best experience on our website.',
+    'link': 'Learn more',
+    'href': 'https://www.cookiesandyou.com/',
     'allow': '許可',
     'deny': '拒否'
   },
+  'autoOpen': true,
   onPopupOpen: function() {
     if (! this.hasConsented()) {
       const buttons = document.querySelectorAll('input[type="submit"]');
